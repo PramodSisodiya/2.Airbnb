@@ -1,17 +1,11 @@
-// db.js or connectDb.js
 import mongoose from "mongoose";
 
 const connectDb = async () => {
     try {
-        await mongoose.connect(process.env.MONGODB_URL, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-        });
-        console.log("DB connected");
+        await mongoose.connect(process.env.MONGODB_URL)
+        console.log("DB connected")
     } catch (error) {
-        console.error("DB connection error:", error.message);
-        process.exit(1); // Optional: Exit app on failure
+        console.log("db error")
     }
-};
-
-export default connectDb;
+}
+export default connectDb
