@@ -19,7 +19,7 @@ function App() {
   let {userData} = useContext(userDataContext)
  
   return (
-    <>
+    <div className="bg-pink-200 min-h-screen">
     <ToastContainer />
     <Routes>
       <Route path='/' element={<Home/>}/>
@@ -42,7 +42,7 @@ function App() {
       
 
     </Routes>
-    </>
+    </div>
   )
 }
 

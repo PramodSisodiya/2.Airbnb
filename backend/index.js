@@ -1,10 +1,11 @@
 import express from "express"
 import dotenv from "dotenv"
+import paymentRoutes from "./routes/paymentRoutes.js";
+import cors from "cors";
 import connectDb from "./config/db.js"
 import authRouter from "./routes/auth.route.js"
 import cookieParser from "cookie-parser"
 dotenv.config()
-import cors from "cors"
 import userRouter from "./routes/user.route.js"
 import listingRouter from "./routes/listing.route.js"
 import bookingRouter from "./routes/booking.route.js"
@@ -22,6 +23,7 @@ app.use("/api/auth", authRouter )
 app.use("/api/user", userRouter )
 app.use("/api/listing",listingRouter )
 app.use("/api/booking",bookingRouter )
+app.use("/api/payment", paymentRoutes)
 
 
 app.listen(port,()=>{

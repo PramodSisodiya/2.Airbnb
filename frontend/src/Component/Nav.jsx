@@ -61,7 +61,7 @@ function Nav() {
 
     return (
 
-        <div className='fixed top-0 bg-[white] z-[20]'>
+        <div className='fixed top-0 bg-[#e5f50f] z-[20]'>
             <div className='w-[100vw] min-h-[80px]  border-b-[1px] border-[#dcdcdc] px-[20px] flex items-center justify-between md:px-[40px] '>
                 <div><img src={logo} alt="" className='w-[130px]' /></div>
 
@@ -117,55 +117,55 @@ function Nav() {
                 
 
             <div className='w-[100vw] h-[85px] bg-white flex items-center justify-start cursor-pointer gap-[40px] overflow-auto md:justify-center px-[15px] '>
-                <div className='flex items-center justify-center flex-col hover:border-b-[1px] border-[#a6a5a5] text-[13px]' onClick={()=>{handleCategory("trending")
+                <div className='flex items-center justify-center flex-col bg-[#B5EECB] p-2 rounded-lg hover:border-b-[2px] border-[#a6a5a5] text-[13px]' onClick={()=>{handleCategory("trending")
                     setCate("")}}>
                     <MdWhatshot className='w-[30px] h-[30px] text-black' />
                     <h3>Trending</h3>
                 </div>
 
-                <div className={`flex items-center justify-center flex-col hover:border-b-[1px] border-[#a6a5a5] text-[13px] ${cate=="villa"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("villa")}>
+                <div className={`flex items-center justify-center flex-col bg-[#B5EECB] p-2 rounded-lg hover:border-b-[2px] border-[#a6a5a5] text-[13px] ${cate=="villa"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("villa")}>
                     <GiFamilyHouse className='w-[30px] h-[30px] text-black' />
                     <h3>Villa</h3>
 
                 </div>
 
-                <div className={`flex items-center justify-center flex-col hover:border-b-[1px] border-[#a6a5a5] text-[13px] ${cate=="farmHouse"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("farmHouse")}>
+                <div className={`flex items-center justify-center flex-col bg-[#B5EECB] p-2 rounded-lg hover:border-b-[2px] border-[#a6a5a5] text-[13px] ${cate=="farmHouse"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("farmHouse")}>
                     <FaTreeCity className='w-[30px] h-[30px] text-black' />
                     <h3>Farm House</h3>
 
                 </div>
 
-                <div className={`flex items-center justify-center flex-col hover:border-b-[1px] border-[#a6a5a5] text-[13px] ${cate=="poolHouse"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("poolHouse")}>
+                <div className={`flex items-center justify-center flex-col bg-[#B5EECB] p-2 rounded-lg hover:border-b-[2px] border-[#a6a5a5] text-[13px] ${cate=="poolHouse"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("poolHouse")}>
                     <MdOutlinePool className='w-[30px] h-[30px] text-black' />
                     <h3>Pool House</h3>
 
                 </div>
 
-                <div className={`flex items-center justify-center flex-col hover:border-b-[1px] border-[#a6a5a5] text-[13px] ${cate=="rooms"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("rooms")}>
+                <div className={`flex items-center justify-center flex-col bg-[#B5EECB] p-2 rounded-lg hover:border-b-[2px] border-[#a6a5a5] text-[13px] ${cate=="rooms"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("rooms")}>
                     <MdBedroomParent className='w-[30px] h-[30px] text-black' />
                     <h3>Rooms</h3>
 
                 </div>
 
-                <div className={`flex items-center justify-center flex-col hover:border-b-[1px] border-[#a6a5a5] text-[13px] ${cate=="flat"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("flat")}>
+                <div className={`flex items-center justify-center flex-col bg-[#B5EECB] p-2 rounded-lg hover:border-b-[2px] border-[#a6a5a5] text-[13px] ${cate=="flat"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("flat")}>
                     <BiBuildingHouse className='w-[30px] h-[30px] text-black' />
                     <h3>Flat</h3>
 
                 </div>
 
-                <div className={`flex items-center justify-center flex-col hover:border-b-[1px] border-[#a6a5a5] text-[13px] ${cate=="pg"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("pg")}>
+                <div className={`flex items-center justify-center flex-col bg-[#B5EECB] p-2 rounded-lg hover:border-b-[2px] border-[#a6a5a5] text-[13px] ${cate=="pg"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("pg")}>
                     <IoBedOutline className='w-[30px] h-[30px] text-black' />
                     <h3>PG</h3>
 
                 </div>
 
-                <div className={`flex items-center justify-center flex-col hover:border-b-[1px] border-[#a6a5a5] text-[13px] ${cate=="cabin"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("cabin")}>
+                <div className={`flex items-center justify-center flex-col bg-[#B5EECB] p-2 rounded-lg hover:border-b-[2px] border-[#a6a5a5] text-[13px] ${cate=="cabin"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("cabin")}>
                     <GiWoodCabin className='w-[30px] h-[30px] text-black' />
                     <h3>Cabins</h3>
 
                 </div>
 
-                <div className={`flex items-center justify-center flex-col hover:border-b-[1px] border-[#a6a5a5] text-[13px] ${cate=="shops"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("shops")}>
+                <div className={`flex items-center justify-center flex-col bg-[#B5EECB] p-2 rounded-lg hover:border-b-[2px] border-[#a6a5a5] text-[13px] ${cate=="shops"?"border-b-[1px] border-[#a6a5a5]":""}`} onClick={()=>handleCategory("shops")}>
                     <SiHomeassistantcommunitystore className='w-[30px] h-[30px] text-black' />
                     <h3>Shops</h3>
 
