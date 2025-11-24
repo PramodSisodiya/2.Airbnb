@@ -40,7 +40,7 @@ function BookingContext({ children }) {
 
       // 2️⃣ Create Razorpay order
       const order = await axios.post(
-        "https://two-airbnb-backend-wrgi.onrender.com/create-order",
+        "https://two-airbnb-backend-wrgi.onrender.com/api/payment/create-order",
         { amount: total },
         { withCredentials: false }
       );
@@ -57,7 +57,7 @@ function BookingContext({ children }) {
         handler: async function (response) {
           // 4️⃣ Verify Payment
           const verify = await axios.post(
-            "https://two-airbnb-backend-wrgi.onrender.com/verify-payment",
+            "https://two-airbnb-backend-wrgi.onrender.com/api/payment/verify-payment",
             {
               razorpay_order_id: response.razorpay_order_id,
               razorpay_payment_id: response.razorpay_payment_id,
