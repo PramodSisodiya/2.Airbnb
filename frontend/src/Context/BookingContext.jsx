@@ -38,7 +38,7 @@ const handleBooking = async (id) => {
 
     // 2️⃣ Create Razorpay order (update port to your backend port)
     const order = await axios.post(
-      "http://localhost:8000/api/payment/create-order",
+     "https://two-airbnb-backend-wrgi.onrender.com" ,
       { amount: total },
       { withCredentials: false }
     );
@@ -55,7 +55,7 @@ const handleBooking = async (id) => {
       handler: async function (response) {
         // 4️⃣ Verify payment
         const verify = await axios.post(
-          "http://localhost:8000/api/payment/verify-payment",
+         "https://two-airbnb-backend-wrgi.onrender.com" ,
           {
         razorpay_order_id: response.razorpay_order_id,
         razorpay_payment_id: response.razorpay_payment_id,
