@@ -6,7 +6,7 @@ const Payment = () => {
     const amount = 500; // ₹500 example
 
     // 1️⃣ Create Order on Backend
-    const order = await fetch("http://localhost:8000/api/payment/create-order", {
+    const order = await fetch("https://two-airbnb-backend-wrgi.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ amount }),
@@ -22,7 +22,7 @@ const Payment = () => {
       order_id: order.id,
       handler: async function (response) {
         // 3️⃣ Verify Payment
-        const verify = await fetch("http://localhost:8000/api/payment/verify-payment", {
+        const verify = await fetch("https://two-airbnb-backend-wrgi.onrender.com",{
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(response),
